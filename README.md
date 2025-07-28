@@ -1,12 +1,34 @@
-# React + Vite
+AI Code Reviewer
+An intelligent code review tool that uses Google’s Gemini API to analyze and review source code across multiple programming languages. Built with React.js on the frontend and Node.js/Express.js on the backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Features
+🔍 Real-time code editing and syntax highlighting
 
-## Expanding the ESLint configuration
+🤖 AI-powered code review using Google Gemini 2.0
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📚 Support for multiple programming languages (JavaScript, Java, Python, etc.)
+
+📄 Markdown-rendered feedback with syntax-highlighted examples
+
+✅ Clear breakdown of issues, fixes, and improvements
+
+🛠️ Tech Stack
+Frontend	Backend	AI Service
+React.js	Node.js	Google Gemini API
+Prism.js	Express.js	@google/generative-ai SDK
+React Markdown	Axios	
+
+🧑‍💻 How It Works
+User types or pastes code into the editor.
+
+Clicks the Review button.
+
+Frontend sends the code to the backend via REST API.
+
+Backend sends the code as a prompt to the Gemini model.
+
+Gemini analyzes and returns feedback.
+
+The frontend displays the review with syntax-highlighted markdown.
